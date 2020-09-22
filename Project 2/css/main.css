@@ -1,11 +1,25 @@
+html{
+	/*Need HTML height so the gradient can cover thw whole page*/
+	height: 100%;
+	/*Pixels to rem is 0.0625 to count on calculator*/
+}
+
 body{
-	background-color: #FC5E55;
+	background-image: linear-gradient(#FC5E55, #FA4083);
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-size: 1.125rem;
 }
 
 .container{
 	width: 1024px;
 	min-height: 300px;
 	margin: 0 auto;
+}
+
+h1{
+	font-size: 3.25rem;
+	font-family: 'Playfair Display', serif;
 }
 
 header{
