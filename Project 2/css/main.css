@@ -1,13 +1,14 @@
 html{
-	/*Need HTML height so the gradient can cover thw whole page*/
-	height: 100%;
-	/*Pixels to rem is 0.0625 to count on calculator*/
+	background-image: linear-gradient(#FC5E55, #FA4083);
 }
 
 body{
-	background-image: linear-gradient(#FC5E55, #FA4083);
+	background-image: url(../img/image-lion-background.png);
+	background-position: top center;
+	background-repeat: no-repeat;
 	font-family: 'Roboto', sans-serif;
 	color: white;
+	/*Pixels to rem is 0.0625 to count on calculator*/
 	font-size: 1.125rem;
 }
 
@@ -23,6 +24,7 @@ header{
 	align-items: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	border-bottom: 2px solid white;
 }
 
 .navbutton{
@@ -31,6 +33,26 @@ header{
 	padding: 11px 25px;
 	border-radius: 5px;
 	border: 2px solid white;
+	display: inline-block;
+	position: relative;
+}
+
+.dropdown{
+	display: none;
+	position: absolute;
+	text-align: center;
+	width: 150px;
+	z-index: 1;
+	padding-top: 20px;
+}
+
+.navbutton:hover .dropdown{
+	display: block;
+}
+
+.dropdown .mybutton{
+	margin: 0px;
+	border-radius: 0px;
 }
 
 main{
@@ -135,4 +157,29 @@ a{
 	/*There is Text Shadow: text-shadow and Box Shadow: box-shadow*/
 	/*X, Y, Fuzzyness, Color*/
 	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.228);
+}
+
+.mybutton:hover{
+	background-color: rgb(29, 213, 103);
+	transition-duration: 1s;
+}
+
+.testimonials{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+
+.tbox{
+	width: 47%;
+	padding: 50px;
+	border: 1px solid white;
+	margin-top: 50px;
+	box-sizing: border-box;
+}
+
+.tbox :last-child{
+	font-size: 0.8rem;
+	padding-left: 30px;
 }
