@@ -1,9 +1,19 @@
+/*Glabal View aka Desktop View*/
 h1{
 	color: limegreen;
 }
 
 /*Tablet View*/
 @media (max-width: 768px) {
+	
+	h1{
+		color: darkorange;
+	}
+
+}
+
+/*Mobile View*/
+@media (max-width: 400px) {
 	
 	h1{
 		color: darkorange;
